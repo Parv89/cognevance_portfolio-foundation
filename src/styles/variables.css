@@ -1,0 +1,16 @@
+:root {
+  --color-bg-primary: #F8FAFC;
+  --color-text-primary: #111827;
+  --color-text-secondary: #64748B;
+  --color-accent: #4F46E5;
+  --color-gold: #C8A96A;
+  --color-white: #FFFFFF;
+  --color-success: #10B981;
+  --color-error: #EF4444;
+
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(226, 232, 240, 0.8);
+  --glass-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.05);
+
+  --font-sans: 'Plus Jakarta Sans', 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+}

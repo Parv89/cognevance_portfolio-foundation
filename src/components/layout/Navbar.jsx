@@ -114,14 +114,17 @@ export function Navbar() {
 
           {/* Actions */}
           <div className="flex items-center gap-3">
-          <a
-            href="https://parv89.github.io/portfolio-foundation/resume/Parv_Gangrade_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex bg-indigo-600 text-white px-4 py-2 rounded-xl"
+          <Button
+             variant="primary"
+             size="sm"
+             icon={FileText}
+             href="https://parv89.github.io/cognevance_portfolio-foundation/resume/Parv_Gangrade_Resume.pdf"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="hidden sm:inline-flex shadow-sm"
           >
-             Resume
-          </a>
+              Resume
+          </Button>
             {/* Mobile Menu Button */}
             <button
               type="button"

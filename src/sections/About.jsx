@@ -101,6 +101,22 @@ const METRIC_CARDS = [
 ];
 
 export function About() {
+  const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+
+  if (element) {
+    const yOffset = -80;
+    const y =
+      element.getBoundingClientRect().top +
+      window.pageYOffset +
+      yOffset;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  }
+};
   return (
     <section id="about" className="py-24 lg:py-32 bg-white relative overflow-hidden">
       
@@ -157,8 +173,13 @@ export function About() {
               ))}
             </div>
 
-            <Button variant="primary" size="md" icon={ArrowRight} href="#skills">
-              View Skills & Tech Stack
+            <Button
+              variant="primary"
+              size="md"
+              icon={ArrowRight}
+              onClick={() => scrollToSection("skills")}
+            >
+               View Skills & Tech Stack
             </Button>
 
           </FadeIn>

@@ -49,7 +49,7 @@ export function Contact() {
 
   try {
     // Save data to MongoDB
-    const response = await fetch("http://localhost:5000/api/contact", {
+    const response = await fetch("https://portfolio-foundation.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -16,6 +16,22 @@ import { Stagger, StaggerItem } from '../components/animations/Stagger';
 import { HERO_METRICS, SITE_CONFIG } from '../constants/theme';
 
 export function Hero() {
+   const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      const yOffset = -80;
+      const y =
+        element.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <section 
       id="home" 
@@ -61,7 +77,7 @@ export function Hero() {
                 variant="primary"
                 size="lg"
                 icon={ArrowRight}
-                href="#projects"
+                onClick={() => scrollToSection("projects")}
                 className="w-full sm:w-auto shadow-xl shadow-accent/25"
               >
                 View Projects
@@ -71,7 +87,7 @@ export function Hero() {
                 variant="secondary"
                 size="lg"
                 icon={Download}
-                href="#contact"
+                onClick={() => scrollToSection("contact")}
                 className="w-full sm:w-auto shadow-sm"
               >
                 Contact Me

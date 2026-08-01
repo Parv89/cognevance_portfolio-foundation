@@ -83,7 +83,7 @@ export function Footer() {
               })}
             </div>
             <a
-               href="/resume/Parv_Gangrade_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume/Parv_Gangrade_Resume.pdf`}
                target="_blank"
                rel="noopener noreferrer"
                className="mt-6 inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-accent text-white font-semibold hover:bg-indigo-600 transition-all shadow-lg shadow-accent/30 hover:scale-105"

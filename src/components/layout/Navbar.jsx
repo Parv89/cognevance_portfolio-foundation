@@ -118,7 +118,7 @@ export function Navbar() {
                variant="primary"
               size="sm"
               icon={FileText}
-              href="/resume/Parv_Gangrade_Resume.pdf"
+              href="https://parv89.github.io/portfolio-foundation/resume/Parv_Gangrade_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex shadow-sm"

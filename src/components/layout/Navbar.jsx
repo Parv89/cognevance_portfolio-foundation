@@ -173,8 +173,9 @@ export function Navbar() {
                   size="md"
                   icon={FileText}
                   fullWidth
-                  href="#contact"
-                  onClick={(e) => scrollToSection(e, 'contact')}
+                  href="https://parv89.github.io/portfolio-foundation/resume/Parv_Gangrade_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Download Resume
                 </Button>

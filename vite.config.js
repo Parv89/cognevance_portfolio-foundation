@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: mode === 'github' ? '/portfolio-foundation/' : '/',
+  base: mode === 'github' ? '/cognevance_portfolio-foundation/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
